@@ -1,0 +1,67 @@
+.logo_block {
+  width: min(100%, 431px);
+}
+.contacts_block {
+  position: relative;
+  width: min(100%, 592px);
+  & button {
+    height: min(100%, 144px);
+    background: var(--color-orange);
+    color: white;
+  }
+}
+
+.nav__block {
+  width: min(100%, 1124px);
+  & li,
+  a {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(78, 78, 78);
+  }
+}
+.footer__container {
+  background: #eeeeee;
+  & li {
+    font-size: 1.6rem;
+  }
+  & div:nth-child(1) {
+    height: min(100%, 545px);
+  }
+  & div:nth-child(2) {
+    height: min(100%, 137px);
+  }
+  & hr {
+    height: 2px;
+  }
+  & input {
+    width: 100%;
+    background: white;
+    padding: 5px 25px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  &__content {
+    &_subsctibe {
+      width: min(100%, 424px);
+    }
+    &_actions {
+      & button {
+        width: min(100%, 200px);
+        height: min(100%, 67px);
+      }
+      & p {
+        width: min(100%, 170px);
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.basket {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}

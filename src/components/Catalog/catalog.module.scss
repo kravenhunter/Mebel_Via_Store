@@ -1,0 +1,167 @@
+.categories__container {
+  width: min(100%, 1399px);
+}
+.catalog__wrapper {
+  margin-bottom: 100px;
+  &_item {
+    width: min(100%, 399px);
+
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.cart {
+  position: relative;
+
+  &__discount {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    background: var(--color-orange);
+    color: white;
+    & p {
+      font-weight: 500;
+    }
+  }
+  &__title {
+    min-height: 100px;
+  }
+  &__price_old {
+    position: relative;
+    & hr {
+      background: var(--color-grey);
+      height: 2px;
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+  }
+  &__delivery {
+    width: min(100%, 80px);
+    & img {
+      width: 25px;
+      height: 25px;
+    }
+    /*     & p {
+      width: min(100%, 50px);
+    } */
+  }
+  & small {
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  & strong {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+}
+
+.filter__container {
+  font-size: 18px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  & p {
+    font-size: 18px;
+  }
+}
+
+.sizes {
+  & input {
+    text-align: center;
+    width: 54px;
+    height: 39px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+
+    background: #fff;
+  }
+}
+.slider {
+  & input {
+    width: 100%;
+  }
+}
+.radio__box {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  /*   padding: 10px; */
+  width: 2.3rem;
+  height: 2.3rem;
+  display: grid;
+
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  &:checked:after {
+    justify-self: center;
+    align-self: center;
+    content: " ";
+    width: 14px;
+    height: 14px;
+    border-radius: 50px;
+    position: absolute;
+    top: 3px;
+    background: #99a1a7;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px;
+    left: 3px;
+    font-size: 32px;
+  }
+  &:checked {
+    background-color: #e9ecee;
+    color: #99a1a7;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.input__box {
+  -webkit-appearance: none;
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 9px;
+  height: 10px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+
+  &:active,
+  &:checked:active {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  &:checked {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05), inset 15px 10px -12px rgba(255, 255, 255, 0.1);
+    color: #99a1a7;
+    &::after {
+      content: "\2714";
+      font-size: 14px;
+      position: absolute;
+      top: 0px;
+      left: 3px;
+      color: #99a1a7;
+    }
+  }
+  /*   & .input__box + label::before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  } */
+}
+.details {
+}

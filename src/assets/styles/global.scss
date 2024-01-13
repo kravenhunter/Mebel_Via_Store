@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./normalize.scss";
+@import "./variables.scss";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: var(--color-light);
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-link);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--color-link-hover);
+}
+
+h1 {
+  font-size: 3.2em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+h2 {
+  font-size: 3em;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+h3 {
+  font-size: 2em;
+  font-weight: 500;
+}
+h4 {
+  font-size: 2.1em;
+
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+li {
+  list-style: none;
+}
+
+p {
+  //14px
+  font-size: 1.4rem;
+
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

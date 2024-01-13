@@ -1,0 +1,161 @@
+.offer__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  &__description {
+    width: min(100%, 565px);
+    height: min(100%, 325px);
+    position: absolute;
+    left: 0;
+
+    background: var(--color-light);
+    width: min(100%, 565px);
+    & h1,
+    p {
+      width: min(100%, 354px);
+    }
+    & h1 {
+      font-weight: 700;
+      margin: 0;
+    }
+    & p {
+      font-size: 1.6rem;
+    }
+    & span {
+      color: var(--color-orange);
+    }
+    & a {
+      width: min(100%, 309px);
+      height: min(100%, 62px);
+    }
+  }
+}
+.benefits {
+  width: min(100%, 1478px);
+  margin-bottom: 100px;
+  /*   & > div {
+    width: min(100%, 341px);
+  } */
+  & p {
+    font-size: 1.6rem;
+  }
+  &__desctiprions {
+    width: min(100%, 650px);
+  }
+  &__icons {
+    width: 100%;
+
+    & > div {
+      width: min(100%, 324px);
+    }
+    & img {
+      width: min(100%, 70px);
+    }
+    & p {
+      width: min(100%, 236px);
+    }
+  }
+  &__image {
+    position: relative;
+    & h2 {
+      position: absolute;
+      width: 175px;
+      margin-right: 96px;
+      color: white;
+    }
+  }
+}
+.about {
+  width: min(100%, 1478px);
+  margin-bottom: 162px;
+  &__play {
+    position: relative;
+    & button {
+      position: absolute;
+      background: transparent;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      padding: 0;
+    }
+  }
+  &__description {
+    width: min(100%, 624px);
+    & > div {
+      box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.25);
+    }
+    &_first,
+    &_second {
+      padding: 27px;
+    }
+    &_first,
+    &_third {
+      height: min(100%, 111px);
+    }
+    &_third {
+      padding: 0 75px;
+    }
+    &_second {
+      height: min(100%, 150px);
+    }
+  }
+}
+.stuff {
+  height: 591px;
+  margin-bottom: 79px;
+  & img {
+    object-fit: cover;
+  }
+  &__block_first {
+    width: min(100%, 499px);
+    position: relative;
+    &_category {
+      background: white;
+      width: min(100%, 180px);
+      height: 79px;
+      position: absolute;
+      bottom: 103px;
+    }
+  }
+  &__block_second {
+    width: min(100%, 988px);
+    &_fisrt {
+      height: 287px;
+
+      & > div {
+        width: min(100%, 310px);
+        position: relative;
+      }
+      &_category {
+        background: white;
+        width: min(100%, 180px);
+        height: 79px;
+        position: absolute;
+        top: 30px;
+      }
+      & div:nth-child(3) {
+        width: min(100%, 317px);
+        background: var(--color-orange);
+        color: white;
+        & > div {
+          width: min(100%, 254px);
+        }
+      }
+    }
+    &_second {
+      height: 261px;
+      & > div {
+        width: min(100%, 464px);
+        position: relative;
+      }
+      &_category {
+        background: white;
+        width: min(100%, 180px);
+        height: 79px;
+        position: absolute;
+        top: 30px;
+      }
+    }
+  }
+}

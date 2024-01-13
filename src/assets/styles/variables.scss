@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+:root {
+  // font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  --color-light: #ffffff;
+  --color-light-hover: #e2e6ea;
+  --color-grey: rgba(0, 0, 0, 0.39);
+  --color-darkGrey: #64748b;
+  --color-darkGrey2: #d2d2d2;
+  --color-dark: #000000;
+  --color-darkLight-hover: #404040;
+  --color-violet: #3e3683;
+  --color-green: #4ade80;
+  --color-darkGreen: #016116;
+  --color-violetLight: #5d53b9;
+  --color-darkBlue: #516eaa;
+  --color-darkBlue-hover: #435c8c;
+  --color-azule: #29c5f6;
+  --color-red: #e14f42;
+  --color-orange: #f57b0a;
+  --color-link: #646cff;
+  --color-link-hover: #535bf2;
+
+  background-color: var(--color-light);
+  /*  --indexSize: calc(1vw + 1vh); */ //~20px
+  /*  font-size: calc(var(--indexSize) * 0.7);  */ //18px
+
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
