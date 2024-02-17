@@ -11,5 +11,6 @@ module.exports = {
     "react/display-name": "off",
     "@typescript-eslint/no-unused-vars": "off",
     "react-hooks/rules-of-hooks": "off",
+    "no-unused-vars": "off",
   },
 };

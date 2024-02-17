@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { useEffect, useState } from "react";
+import { ChangeEvent, memo, useCallback, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { CatalogList, Categories, Filter, Icony } from "../../components";
 import catalogData from "../../store/catalog.json";
@@ -34,11 +34,29 @@ const initProposes = () => {
   };
 };
 
-const index = () => {
+export const index = memo(() => {
   const [catalogList, setCatalog] = useState<ICard[]>([]);
 
   const [proposes, setProposes] = useState<IFilterSearch>(initProposes);
-  const reset = () => setProposes(initProposes);
+  const reset = useCallback(() => setProposes(initProposes), []);
+  const handleFilter = useCallback((event: ChangeEvent<HTMLInputElement>, type: string) => {
+    type === "array" &&
+      setProposes((prev) => {
+        event.target.checked && (prev[event.target.name as keyof IFilterSearch] as string[]).push(event.target.value);
+
+        if (!event.target.checked) {
+          (prev[event.target.name as keyof IFilterSearch] as string[]) = (prev[event.target.name as keyof IFilterSearch] as string[]).filter((el) => el !== event.target.value);
+        }
+
+        return { ...prev };
+      });
+
+    type === "object" &&
+      setProposes((prev) => {
+        return { ...prev, [event.target.name as keyof IFilterSearch]: event.target.value };
+      });
+  }, []);
+
   useEffect(() => {
     const cat = filreList(proposes, catalogData);
     console.log(cat);
@@ -52,7 +70,7 @@ const index = () => {
     <div className="catalog__container">
       <Categories />
       <div className="flex gap-x-20">
-        <Filter setFilter={setProposes} filter={proposes} reset={reset} />
+        <Filter setFilter={handleFilter} filter={proposes} reset={reset} />
         <div className="catalog__list">
           <div className="category__path">
             <ul className="flex text-[16px] text-gray-400 items-center gap-x-3 ">
@@ -80,6 +98,4 @@ const index = () => {
       </div>
     </div>
   );
-};
-
-export default index;
+});

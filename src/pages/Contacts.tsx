@@ -10,8 +10,16 @@ const Contacts = () => {
     console.log();
 
     setSelected(store);
-    store === "Перово" && setLocation((prev) => (prev = [55.755018, 37.798089]));
-    store === "Химки" && setLocation((prev) => (prev = [55.938098, 37.314921]));
+    store === "Перово" &&
+      setLocation((prev) => {
+        prev = [55.755018, 37.798089];
+        return prev;
+      });
+    store === "Химки" &&
+      setLocation((prev) => {
+        prev = [55.938098, 37.314921];
+        return prev;
+      });
     console.log(selecteStore);
     console.log(store);
     console.log(location);

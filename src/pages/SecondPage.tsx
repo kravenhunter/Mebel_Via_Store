@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Confirmation, Icony } from "./../components/index";
+import { Icony } from "./../components/index";
 // import { textSliceActions } from "../../store/textSlice";
 // import { useAppDispatch, useAppSelector } from "../hooks";
 
@@ -9,7 +9,7 @@ import { addText, deleteText } from "../store/counter/countSlice";
 
 const SecondPage = () => {
   const [text, setText] = useState("");
-  const [confirm, setConfirm] = useState(false);
+  // const [confirm, setConfirm] = useState(false);
   const textList = useAppSelector((state) => state.counter.testArr);
 
   const dispatch = useAppDispatch();
@@ -31,7 +31,7 @@ const SecondPage = () => {
             Add text
           </button>
         </div>
-        {textList?.map((el, index) => (
+        {textList?.map((el) => (
           <div key={el} className="content flex gap-x-[30px]">
             <h4>{el}</h4>
             <div onClick={() => removeClick(el)} className="close w-[20px] h-[20px] cursor-pointer">
@@ -40,9 +40,9 @@ const SecondPage = () => {
           </div>
         ))}
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <Confirmation setShow={setConfirm} />
-      </div>
+      </div> */}
     </>
   );
 };

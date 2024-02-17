@@ -1,3 +1,4 @@
+import { memo } from "react";
 import { ICard } from "../../types/ITypes";
 import { Cart } from "../index";
 import styles from "./catalog.module.scss";
@@ -5,7 +6,7 @@ interface IProps {
   title: string;
   carts: ICard[];
 }
-const CatalogList = ({ title, carts }: IProps) => {
+export const CatalogList = memo(({ title, carts }: IProps) => {
   return (
     <>
       <div className={`${styles.catalog__wrapper} flex flex-col gap-y-10 `}>
@@ -20,6 +21,4 @@ const CatalogList = ({ title, carts }: IProps) => {
       </div>
     </>
   );
-};
-
-export default CatalogList;
+});

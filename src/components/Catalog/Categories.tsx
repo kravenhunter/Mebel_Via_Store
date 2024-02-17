@@ -1,6 +1,7 @@
+import { memo } from "react";
 import { Icony } from "../index";
 import styles from "./catalog.module.scss";
-const Categories = () => {
+export const Categories = memo(() => {
   const categories = [
     {
       iconLink: "cil:sofa",
@@ -48,6 +49,4 @@ const Categories = () => {
       ))}
     </div>
   );
-};
-
-export default Categories;
+});

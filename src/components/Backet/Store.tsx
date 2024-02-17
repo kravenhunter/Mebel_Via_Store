@@ -5,7 +5,7 @@ import { ICard } from "../../types/ITypes";
 import { Icony, Image } from "../index";
 
 const countPrice = (products: ICard[]) => {
-  const price = products.reduce((previousValue, currentValue, index) => {
+  const price = products.reduce((previousValue, currentValue) => {
     previousValue += currentValue.price;
     return previousValue;
   }, 0);
@@ -19,7 +19,7 @@ const countPrice = (products: ICard[]) => {
 
 const countDicont = (products: ICard[], allPrice: number) => {
   //Get sum of the whole percents
-  const sumPercents = products.reduce((previousValue, currentValue, index) => {
+  const sumPercents = products.reduce((previousValue, currentValue) => {
     previousValue += currentValue.discount;
     return previousValue;
   }, 0);

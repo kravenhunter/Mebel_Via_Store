@@ -1,8 +1,6 @@
 import { Icony, Image } from "../index";
 import styles from "./home.module.scss";
-interface IProps {
-  imagesStuff: string[];
-}
+
 const GroupStuff = () => {
   const imagesStuff: string[] = ["/images/home/hall.png", "/images/home/hall.png", "/images/home/kitchen.png", "/images/home/beds.png", "/images/home/comodos.png"];
   return (
