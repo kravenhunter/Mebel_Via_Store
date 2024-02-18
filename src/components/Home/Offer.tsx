@@ -4,10 +4,10 @@ import styles from "./home.module.scss";
 
 const Offer = () => {
   console.log(galary);
-
+  const imgOffer = galary[0];
   return (
     <div className={`${styles.offer__container} flex  `}>
-      <Image {...galary[0]} />
+      <Image {...imgOffer} />
       <div className={`${styles.offer__container__description} self-center grid  px-16 pt-16 pb-8 `}>
         <h1>
           Мебельный <br /> дискаунтер Mebel <span>Via</span>

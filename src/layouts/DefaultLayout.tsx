@@ -21,7 +21,7 @@ export interface IProps {
 const DefaultLayout = () => {
   return (
     <>
-      <div className={`${styles.base} bg-black `}>
+      <div className={`${styles.base} bg-black px-[30px] `}>
         <Header />
         <RouterNav />
         <Footer />

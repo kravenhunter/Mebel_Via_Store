@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { UserBasket } from "../../components";
 import { useAppSelector } from "../../hooks";
 import { useShowCart } from "../../hooks/useShowCart";
-import { Icony } from "../index";
+import { Icony, Image } from "../index";
 import styles from "./ui.module.scss";
 
 // import catalog from "../../store/catalog.json";
@@ -22,7 +22,7 @@ const Header = () => {
       <div className="flex justify-between ">
         <ul className={`${styles.logo_block} flex gap-10 justify-between`}>
           <li>
-            <img src="images/Mebel-Via-logo.svg" alt="Mebel-Via logo" />
+            <Image link="images/Mebel-Via-logo.svg" name="Mebel-Via logo" />
             <p>Мебельный дискаунтер</p>
           </li>
           <li>

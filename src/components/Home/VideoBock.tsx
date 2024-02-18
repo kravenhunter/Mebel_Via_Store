@@ -3,7 +3,7 @@ import styles from "./home.module.scss";
 
 const VideoBock = () => {
   return (
-    <div className={`${styles.about} flex m-auto justify-around gap-8 `}>
+    <div className={`${styles.about} flex m-auto justify-around gap-8 flex-wrap `}>
       <div className={`${styles.about__play} grid `}>
         <Image link="/images/home/Worker1.jpg" name="worker-1" />
         <button className={`place-self-center`}>

@@ -3,7 +3,7 @@ import styles from "./home.module.scss";
 
 const Apportunities = () => {
   return (
-    <div className={`${styles.benefits} flex m-auto justify-around gap-8 `}>
+    <div className={`${styles.benefits} flex m-auto justify-around gap-8  flex-wrap`}>
       <div className={`${styles.benefits__desctiprions} grid justify-between`}>
         <div className="grid">
           <h2>Наши преимущества</h2>

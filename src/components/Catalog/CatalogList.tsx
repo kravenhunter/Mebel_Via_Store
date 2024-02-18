@@ -11,7 +11,7 @@ export const CatalogList = memo(({ title, carts }: IProps) => {
     <>
       <div className={`${styles.catalog__wrapper} flex flex-col gap-y-10 `}>
         <h2 className="mt-8">{title}</h2>
-        <div className={`flex flex-wrap justify-between gap-y-32  `}>
+        <div className={`flex flex-wrap  gap-y-32  gap-x-[50px]`}>
           {carts.map((el, index) => (
             <div key={index} className={`${styles.catalog__wrapper_item}`}>
               <Cart {...el} />

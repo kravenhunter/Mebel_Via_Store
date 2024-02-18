@@ -48,8 +48,8 @@ const CartDetails = ({ card }: IProps) => {
           <li>Корпусная мебель</li>
         </ul>
       </div>
-      <div className="details__card grid gap-y-[68px]">
-        <div className="details__card_base flex justify-between">
+      <div className="details__card grid gap-y-[68px] ">
+        <div className="details__card_base flex justify-between gap-x-[20px]">
           <div className="galaries flex gap-x-2">
             <ul className="image__list max-w-[164px] grid gap-y-2">
               <li onClick={() => setSelected(() => card.imageDetails1)}>
@@ -151,7 +151,7 @@ const CartDetails = ({ card }: IProps) => {
             <p className="p-1 text-gray-600 text-[16px] border-dotted border-b-[3px]   border-gray-300">Отзывы покупателей (4)</p>
           </div>
 
-          <div className="specification flex justify-between">
+          <div className="specification flex justify-between gap-x-[20px]">
             <div className="specification__block w-full max-w-[670px] flex flex-col gap-y-[15px]">
               <ul className=" flex items-end justify-between">
                 <li>

@@ -38,7 +38,7 @@ export const Categories = memo(() => {
   ];
 
   return (
-    <div className={`${styles.categories__container} flex justify-between gap-2 m-auto my-20`}>
+    <div className={`${styles.categories__container} flex justify-between gap-2 m-auto my-20 `}>
       {categories?.map((el, index) => (
         <div className="grid gap-6 justify-items-center" key={index}>
           <a href="#">

@@ -31,10 +31,10 @@ import { store } from "./store";
 // Вариант 2  подразумевает обрачивание компонета Routes  DefaultLayout
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <Provider store={store}>
         <DefaultLayout />
-      </BrowserRouter>
-    </Provider>
+      </Provider>
+    </BrowserRouter>
   </React.StrictMode>
 );
